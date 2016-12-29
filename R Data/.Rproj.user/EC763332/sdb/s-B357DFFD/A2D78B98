@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1482163741547.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A2D78B98",
+    "lastKnownWriteTime" : 717942060274941952,
+    "last_content_update" : 1482163741547,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "f07tjkk0oi",
+        "caption" : "controlTickers",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=controlTickers&cache_key=f07tjkk0oi",
+        "displayedObservations" : "784",
+        "environment" : "",
+        "object" : "controlTickers",
+        "totalObservations" : "784",
+        "variables" : "1"
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

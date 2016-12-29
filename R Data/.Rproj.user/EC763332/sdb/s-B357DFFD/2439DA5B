@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "refresh <- function(tix){\n  getSymbols(colnames(tix)[-1])\n}\n\ngetVolume <- function(tix) {\n  #Generate list of tickers\n  tickers <- colnames(tix)[-1]\n  \n  #Call up the data for each stock\n  i = 2\n  \n  #Create first XTS file\n  temp = get(tickers[1])\n  bix <- Vo(temp)[\"2016-09-15/2016-12-14\"]\n  \n  while (i<=199) {\n    temp <- get(tickers[i]) #Put the temporary data for each stock in here\n    tempVolume <- Vo(temp)[\"2016-09-15/2016-12-14\"]#Get the volume for each stock\n    bix <- merge(bix, tempVolume)\n    i = i+1\n  }\n  bix <- na.omit(bix)\n  bix\n}\n\ngetDollarVolume <- function(tix) {\n  #This function creates the dollar volume traded for a stock\n  #based on the average of it's high and low prices for the day.\n  \n  #Generate list of tickers\n  tickers <- colnames(tix)[-1]\n  \n  #Call up the data for each stock\n  i = 2\n  \n  #Create first XTS file\n  temp = get(tickers[1])\n  bix <- Vo(temp)[\"2016-09-15/2016-12-14\"] * ((Hi(temp)[\"2016-09-15/2016-12-14\"] + Lo(temp)[\"2016-09-15/2016-12-14\"] )/2)\n  \n  while (i<=199) {\n    temp <- get(tickers[i]) #Put the temporary data for each stock in here\n    tempVolume <- Vo(temp)[\"2016-09-15/2016-12-14\"] * ((Hi(temp)[\"2016-09-15/2016-12-14\"] + Lo(temp)[\"2016-09-15/2016-12-14\"] )/2)#Get the volume for each stock\n    bix <- merge(bix, tempVolume)\n    i = i+1\n  }\n  bix <- na.omit(bix)\n  bix\n}\n\nstockMeanVolume <- function (avol, bvol) {\n  i = 1\n  Average.AVolume = rep(0,199)\n  meanVol <- data.frame(row.names = tickers, Average.AVolume)\n  \n  while(i<=199){\n    meanVol [i,1]  <- mean(avol[,i])\n    i = i+1\n  }\n  \n  i = 1\n  \n  while(i<=199){\n    meanVol [i,2]  <- mean(bvol[,i])\n    i = i+1\n  }\n  colnames( meanVol ) <- c(\"A Volume\", \"B Volume\")\n  meanVol\n}\n\ngraphVolumes <- function (volume) {\n  i = 2\n  \n  plot.xts(volume[,1])\n  \n  while (i<=60) {\n    points(volume[,i], type = 'l')\n    i = i+1\n  }\n}\n\npvals <- function (avol, bvol) {\n  i = 1\n  pvalu <- 0\n  \n  while (i<=length(avol[,1])) {\n    x <- t.test(avol[,i], bvol[,i], var.equal = FALSE, paired = FALSE)\n    pvalu[i] <- x$p.value\n    i = i+1\n  }\n  pvalu\n}\n\naverageWidth <- function (volume) {\n  \n  for (i in length(volume)) {\n    \n  }\n}",
+    "created" : 1481639059074.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "0|25|2|0|\n4|28|23|0|\n25|34|47|0|\n49|42|67|0|\n69|35|78|0|\n80|32|90|0|\n",
+    "hash" : "1142950438",
+    "id" : "2439DA5B",
+    "lastKnownWriteTime" : 1482247436,
+    "last_content_update" : 1482247436866,
+    "path" : "C:/Users/cpfif/Desktop/TickrTape/R Data/VolumeFunction.R",
+    "project_path" : "VolumeFunction.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : true,
+    "source_window" : "",
+    "type" : "r_source"
+}

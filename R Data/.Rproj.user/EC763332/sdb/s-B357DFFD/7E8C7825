@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1482247395271.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7E8C7825",
+    "lastKnownWriteTime" : 3612550156348779873,
+    "last_content_update" : 1482247395271,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "bmgt8bg1g2",
+        "caption" : "ABCO",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ABCO&cache_key=bmgt8bg1g2",
+        "displayedObservations" : 2509,
+        "environment" : "",
+        "object" : "ABCO",
+        "totalObservations" : 2509,
+        "variables" : 6
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

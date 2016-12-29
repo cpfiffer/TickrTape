@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1482067011114.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "91CD3BB5",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1482067011114,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "9avpxihd6x",
+        "caption" : "volumes",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=volumes&cache_key=9avpxihd6x",
+        "displayedObservations" : "64",
+        "environment" : "",
+        "object" : "volumes",
+        "totalObservations" : "64",
+        "variables" : "199"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

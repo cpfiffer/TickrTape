@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1482148891201.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A7732FD6",
+    "lastKnownWriteTime" : 7884712426273272943,
+    "last_content_update" : 1482148891201,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "t02x01u1xb",
+        "caption" : "bvol",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=bvol&cache_key=t02x01u1xb",
+        "displayedObservations" : 30,
+        "environment" : "",
+        "object" : "bvol",
+        "totalObservations" : 30,
+        "variables" : 199
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
